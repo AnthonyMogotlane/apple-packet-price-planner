@@ -5,8 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple packet price planner</title>
+    <!-- simple-grid css -->
+    <link rel="stylesheet" href="css/simple-grid.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row">
+            <div class="col-12-sm col-8">
+                <h1>Apple packet price planner</h1>
+
+                <h2>Apple buying data</h2>
+
+                <label for="box of apples">Cost price for a box of apples</label>
+                <input type="text" id="box_of_apples"><br>
+
+                <label for="apples in the box">Number of apples in the box</label>
+                <input type="text" id="apples_in_box"><br>
+
+                <label for="apples in the packet">The packet size apples are sold</label>
+                <input type="text" id="apples_in_packet"><br>
+
+                <label for="apples in the packet">Required Profit</label>
+                <input type="text" id="apples_in_packet">
+                <br>
+                <br>
+                <button class="calculate-btn">Calculate</button>
+
+                <h2>Apple price calculations</h2>
+                <p>Number of packets: <span class="number_of_packets">5</span></p>
+                <p>Cost price per apple: <span class="price_per_apple">3</span></p>
+                <p>Cost price per apple: <span class="price_per_packet">4</span> </p>
+                <p>Cost price per apple: <span class="recommened_price">5</span></p>
+
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
