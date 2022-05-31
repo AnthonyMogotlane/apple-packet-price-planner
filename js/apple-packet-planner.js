@@ -6,7 +6,7 @@ const ApplePacketPlanner = () => {
     let percentage;
   
     let theNumberOfPackets;
-    let thePriceOfTheApple;
+    let thePriceOfTheApple; 
     let thePriceOfThePacket;
     let theRecommendedPrice;
 
@@ -39,7 +39,7 @@ const ApplePacketPlanner = () => {
     //calculate the recommended price to sell the packet
     const recommendedPrice = () => {
         //formula calculating the recommended price
-        let theRecommendedPrice = (((getBoxPrice() * getPercentage()/100) + getBoxPrice()) / getNumberInBox()) * getNumberInPacket();
+        theRecommendedPrice = (((getBoxPrice() * getPercentage()/100) + getBoxPrice()) / getNumberInBox()) * getNumberInPacket();
         return theRecommendedPrice;
     }
     return {
@@ -51,7 +51,6 @@ const ApplePacketPlanner = () => {
         getNumberInPacket,
         setPercentage,
         getPercentage,
-
         numberOfPackets,
         pricePerApple,
         pricePerPacket,

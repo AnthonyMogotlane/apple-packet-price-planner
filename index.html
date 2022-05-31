@@ -7,39 +7,45 @@
     <title>Apple packet price planner</title>
     <!-- simple-grid css -->
     <link rel="stylesheet" href="css/simple-grid.css">
+    <!-- handlebars cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="col-12-sm col-8">
-                <h1>Apple packet price planner</h1>
+                <h3>Apple packet price planner</h3>
 
-                <h2>Apple buying data</h2>
+                <h4>Apple buying data</h4>
 
                 <label for="box of apples">Cost price for a box of apples</label>
-                <input type="text" id="box_of_apples"><br>
+                <input type="number" id="box_price"><br>
 
                 <label for="apples in the box">Number of apples in the box</label>
-                <input type="text" id="apples_in_box"><br>
+                <input type="number" id="apples_in_box"><br>
 
                 <label for="apples in the packet">The packet size apples are sold</label>
-                <input type="text" id="apples_in_packet"><br>
+                <input type="number" id="apples_in_packet"><br>
 
                 <label for="apples in the packet">Required Profit</label>
-                <input type="text" id="apples_in_packet">
+                <input type="number" id="profit_perc">
                 <br>
                 <br>
-                <button class="calculate-btn">Calculate</button>
+                <button class="calculate_btn">Calculate</button>
 
-                <h2>Apple price calculations</h2>
-                <p>Number of packets: <span class="number_of_packets">5</span></p>
-                <p>Cost price per apple: <span class="price_per_apple">3</span></p>
-                <p>Cost price per apple: <span class="price_per_packet">4</span> </p>
-                <p>Cost price per apple: <span class="recommened_price">5</span></p>
-
-
+                <h4>Apple price calculations</h4>
+                <div class="values_container"></div>
             </div>
         </div>
     </div>
+    
+    <script type="text/x-handlebars-template" class="values_content">
+         <p>Number of packets: <span class="number_of_packets">{{one}}</span></p>
+        <p>Cost price per apple: <span class="price_per_apple">R {{two}}</span></p>
+        <p>Cost price per packet: <span class="price_per_packet">R {{three}}</span> </p>
+        <p>recommened packet price: <span class="recommened_price">R {{four}}</span></p>
+    </script>
+    <script src="./js/apple-packet-planner.js"></script>
+    <script src="./js/apple-packet-planner.dom.js"></script>
 </body>
 </html>
