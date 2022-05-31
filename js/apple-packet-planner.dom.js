@@ -25,6 +25,7 @@ calculateBtn.addEventListener("click", () => {
 
 
     valuesTemplate(applePacketPlanner.numberOfPackets(), applePacketPlanner.pricePerApple(), applePacketPlanner.pricePerPacket(), applePacketPlanner.recommendedPrice())
+
 })
 
 //Handlebars template function for output values

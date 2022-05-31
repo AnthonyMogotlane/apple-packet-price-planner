@@ -7,13 +7,14 @@
     <title>Apple packet price planner</title>
     <!-- simple-grid css -->
     <link rel="stylesheet" href="css/simple-grid.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- handlebars cdn -->
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-12-sm col-8">
+            <div class="col-12-sm col-18">
                 <h3>Apple packet price planner</h3>
 
                 <h4>Apple buying data</h4>
@@ -28,7 +29,7 @@
                 <input type="number" id="apples_in_packet"><br>
 
                 <label for="apples in the packet">Required Profit</label>
-                <input type="number" id="profit_perc">
+                <input type="number" id="profit_perc"><span>%</span>
                 <br>
                 <br>
                 <button class="calculate_btn">Calculate</button>
